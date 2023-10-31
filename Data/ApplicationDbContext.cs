@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using CampaignWiki.Models;
 
 namespace CampaignWiki.Data
 {
@@ -9,5 +10,6 @@ namespace CampaignWiki.Data
             : base(options)
         {
         }
+        public DbSet<CampaignWiki.Models.Wikipage>? Wikipage { get; set; }
     }
 }
